@@ -34,7 +34,7 @@ This project focuses on designing, managing, and querying relational databases u
 - Created at least one SQL function to enhance database capabilities  
 
 **Files Included:**  
-- `Project4_SQLscript_LastName.sql` — SQL scripts for all queries and database creation  
+- `Project4_SQLscript_Dotson.sql` — SQL scripts for all queries and database creation  
 - 'Project4 SQL Script Views'  
 
 **Outcome:**  
