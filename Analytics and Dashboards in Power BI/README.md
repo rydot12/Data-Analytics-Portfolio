@@ -28,8 +28,8 @@ This project focuses on data visualization and analysis using Power BI. The goal
 - Tab Q10: Custom dashboard with multiple visualizations and interactive elements, showcasing deep analytical insights.
 
 **Files Included:**  
-- `Project3_LastName.pbix` — Power BI dashboard file  
-- `Project3_LastName.docx` — Written analysis and explanations for each tab
+- `Project3_Dotson.pbix` — Power BI dashboard file  
+- `Project3_Dotson.docx` — Written analysis and explanations for each tab
 
 **Outcome:**  
 The project demonstrates the ability to convert raw datasets into professional, interactive dashboards that answer business questions, highlight trends, and support data-driven decisions.
