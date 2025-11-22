@@ -24,7 +24,7 @@ This project focuses on analyzing data using Excel to derive data-driven conclus
 - Professional documentation: All worksheets labeled clearly with accompanying analysis and justifications for data handling decisions.  
 
 **Files Included:**  
-- `Project2_LastName.xlsx` — Excel workbook with all worksheets, calculations, and visualizations  
+- `Project2_Dotson.xlsx` — Excel workbook with all worksheets, calculations, and visualizations  
 
 **Outcome:**  
 The project demonstrates the ability to clean, analyze, and model real-world data professionally, using Excel to extract actionable insights and present them clearly.
