@@ -1,0 +1,46 @@
+# Python Project – Data 600: Loops, Lists, and Calculations
+
+**Overview:**  
+This project focuses on manipulating and iterating through data using loops in Python. The goal was to apply variable creation, mathematical formulas, list management, and loop logic to simulate real-world business scenarios. Professional formatting and clear documentation were emphasized to prepare the project for portfolio use.
+
+**Tools Used:**  
+- Python / Jupyter Notebook  
+- Microsoft Word (for screenshots and documentation)  
+- Python concepts: variables, arithmetic operations, list creation and updates, indexing, `for` loops, and conditional logic
+
+**Skills Demonstrated:**  
+- Creating and using variables to perform financial calculations  
+- Printing professionally formatted output  
+- Building and organizing parallel lists  
+- Inserting, removing, and updating list elements while maintaining sorted order  
+- Using loops to compute values and apply business logic  
+- Writing clean and readable Python code suitable for professional environments
+
+**Project Highlights:**
+
+**Part A:**  
+- Defined variables for principal, interest rate, and repayment time  
+- Calculated repayment amount using the simple interest formula:  
+  *A = P(1 + i × t)*  
+- Printed output using the required strict formatting (single space after colon, no space after dollar sign)
+
+**Part B:**  
+- Created parallel lists of employee names and years of service  
+- Manually sorted employees in decreasing order of service  
+- Added new employees (Gina, Herb, Iris) in the correct sorted positions  
+- Removed Fred after his departure and added Jack with 6 years of experience  
+- Printed updated lists at each stage to verify accuracy  
+- Demonstrated mastery of list indexing and ordering
+
+**Part C:**  
+- Created a list of monitor order quantities  
+- Applied tiered bulk-pricing rules ($100, $90, and $80 per monitor)  
+- Used a loop to calculate total cost for each order quantity  
+- Printed output using exact formatting as required for professional presentation
+
+**Files Included:**  
+- `Project6_Pythonscript_Dotson.html` — Complete Python script with solutions  
+- `Project6_Pythonscreenshots_Dotson.docx` — Screenshots of Python code and outputs
+
+**Outcome:**  
+This project demonstrates strong proficiency in Python fundamentals, including loops, list manipulation, conditional logic, and formatted output. The structure and documentation reflect real-world, business-ready coding practices suitable for inclusion in a professional portfolio.
