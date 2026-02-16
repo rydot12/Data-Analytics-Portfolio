@@ -1,0 +1,271 @@
+---
+title: 'DTSC 550: Intro to Statistical Modeling'
+subtitle: 'CG Lab 2 Template'
+output: html_notebook
+editor_options:
+  chunk_output_type: inline
+---
+
+# Student Info
+
+*Name:* Ryan Dotson
+
+*Term:* Spring 1 2026
+
+*Date:* 01-15-2026
+
+
+# Questions
+
+## Part 1
+
+The dataframe is called *`usairports`* within the airports package. Let's view the dataframe by running the following code block. Take some time to familiarize yourself with the columns and rows.
+
+```{r}
+usairports
+```
+
+### Q1: View the data in only the first 4 rows of the usairports dataframe. Store this result to a variable called Q1.
+
+```{r}
+### Do not change and do not delete the comment below. It is required for CodeGrade to run properly.
+## CG Q1 ##
+
+### TYPE YOUR CODE BELOW ###
+
+Q1 <- head(usairports, 4)
+
+### VIEW OUTPUT ###
+Q1
+
+```
+
+### Q2: Assign the dimensions of the usairports dataset to a variable called Q2.
+
+Do not hard code the answer! That is, do not simply have `Q2 <- {a number}`
+
+```{r}
+### Do not change and do not delete the comment below. It is required for CodeGrade to run properly.
+# CG Q2 #
+
+### TYPE YOUR CODE BELOW ###
+
+Q2 <- dim(usairports)
+
+### VIEW OUTPUT ###
+Q2
+
+```
+
+### Q3: Store the last 5 rows of the usairports dataframe and view only columns 5, 6, & 7. Use indexing to access the requested columns. Store this result to a variable called Q3.
+
+For assistance with indexing, refer to this [article](https://www.geeksforgeeks.org/how-to-select-dataframe-columns-by-index-in-r/). Be careful, though, not to use the last approach, which utilizes the dplyr library. This lab does not allow the use of dplyr functions.
+
+```{r}
+### Do not change and do not delete the comment below. It is required for CodeGrade to run properly.
+# CG Q3 #
+
+### TYPE YOUR CODE BELOW ###
+
+Q3 <- tail(usairports, 5)[, c(5:7)]
+
+### VIEW OUTPUT ###
+Q3
+
+```
+
+### Q4: Store the names of the first six variables in the usairports dataframe to Q4.
+
+Do not hard code the answer! That is, do not simply type the names of the columns.
+
+```{r}
+### Do not change and do not delete the comment below. It is required for CodeGrade to run properly.
+# CG Q4 #
+
+### TYPE YOUR CODE BELOW ###
+
+Q4 <- names(usairports)[1:6]
+
+### VIEW OUTPUT ###
+Q4
+
+```
+
+### Q5: Store the number of columns (i.e., the number of variables) in the usairports dataframe to Q5.
+
+Do not hard code the answer! That is, do not simply have *`Q5 <- {a number}`*
+
+```{r}
+### Do not change and do not delete the comment below. It is required for CodeGrade to run properly.
+# CG Q5 #
+
+### TYPE YOUR CODE BELOW ###
+
+Q5 <- ncol(usairports)
+
+### VIEW OUTPUT ###
+Q5
+
+```
+
+### Q6: Use indexing to store the 3rd column name in the usairports data set to Q6.
+
+```{r}
+### Do not change and do not delete the comment below. It is required for CodeGrade to run properly.
+# CG Q6 #
+
+### TYPE YOUR CODE BELOW ###
+
+Q6 <- names(usairports)[3]
+
+### VIEW OUTPUT ###
+Q6
+
+```
+
+### Q7: Store the values of the first 6 values of the `ownership` variable in the usairports dataframe to Q7. Use the `$` operator to access the values.
+
+For assistance with the `$` operator, see this [article](https://statisticsglobe.com/meaning-of-dollar-operator-in-r)
+
+Or, refer to the article ["How to Access Components of a Dataframe"](https://www.datamentor.io/r-programming/data-frame/)
+
+```{r}
+### Do not change and do not delete the comment below. It is required for CodeGrade to run properly.
+# CG Q7 #
+
+### TYPE YOUR CODE BELOW ###
+
+Q7 <- usairports$ownership[1:6]
+
+### VIEW OUTPUT ###
+Q7
+
+```
+
+### Q8: Use the length function to store the number of rows of the ownership variable in the usairports data set. Store the value in Q8.
+
+Do not hard code the answer! That is, do not simply have `Q8 <- {a number}`
+
+```{r}
+### Do not change and do not delete the comment below. It is required for CodeGrade to run properly.
+# CG Q8 #
+
+### TYPE YOUR CODE BELOW ###
+
+Q8 <- length(usairports$ownership)
+
+### VIEW OUTPUT ###
+Q8
+
+```
+
+### Q9: Store the values of the ownership variable in a table and assign the table to Q9.
+
+Read this [documentation](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/table) for assistance.
+
+```{r}
+### Do not change and do not delete the comment below. It is required for CodeGrade to run properly.
+# CG Q9 #
+
+### TYPE YOUR CODE BELOW ###
+
+Q9 <- table(usairports$ownership)
+
+### VIEW OUTPUT ###
+Q9
+
+```
+
+------------------------------------------------------------------------
+
+## Part 2
+
+### Q10: Create a vector with these names: Matthew, Mark, Luke, and John. Assign it to Q10.
+
+```{r}
+### Do not change and do not delete the comment below. It is required for CodeGrade to run properly.
+# CG Q10 #
+
+### TYPE YOUR CODE BELOW ###
+
+Q10 <- c('Matthew', 'Mark', 'Luke', 'John')
+
+### VIEW OUTPUT ###
+Q10
+
+```
+
+### Q11: Create a vector with these valuees: 28, 16, 24, 21. Assign it to Q11.
+
+```{r}
+### Do not change and do not delete the comment below. It is required for CodeGrade to run properly.
+# CG Q11 #
+
+### TYPE YOUR CODE BELOW ###
+
+Q11 <- c(28, 16, 24, 21)
+
+### VIEW OUTPUT ###
+Q11
+
+```
+
+### Q12: Create a vector with these values: 1071, 678, 1151, 879. Assign it to Q12.
+
+```{r}
+### Do not change and do not delete the comment below. It is required for CodeGrade to run properly.
+# CG Q12 #
+
+### TYPE YOUR CODE BELOW ###
+
+Q12 <- c(1071, 678, 1151, 879)
+
+### VIEW OUTPUT ###
+Q12
+
+```
+
+### Q13: Create a vector with these names: tax collector, young man, physician, beloved. Assign it to Q13.
+
+```{r}
+### Do not change and do not delete the comment below. It is required for CodeGrade to run properly.
+# CG Q13 #
+
+### TYPE YOUR CODE BELOW ###
+
+Q13 <- c('tax collector', 'young man', 'physician', 'beloved')
+
+### VIEW OUTPUT ###
+Q13
+
+```
+
+### Q14: Create a dataframe with Q10, Q11, Q12, and Q13. Assign it to Q14.
+
+```{r}
+### Do not change and do not delete the comment below. It is required for CodeGrade to run properly.
+# CG Q14 #
+
+### TYPE YOUR CODE BELOW ###
+
+Q14 <- data.frame(Q10, Q11, Q12, Q13)
+
+### VIEW OUTPUT ###
+Q14
+
+```
+
+### Q15: Find the class of Q14. Assign it to Q15.
+
+```{r}
+### Do not change and do not delete the comment below. It is required for CodeGrade to run properly.
+# CG Q15 #
+
+### TYPE YOUR CODE BELOW ###
+
+Q15 <- class(Q14)
+
+### VIEW OUTPUT ###
+Q15
+
+```
